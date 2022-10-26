@@ -1,3 +1,12 @@
 public class Author {
-    String fullName = "Лев Николаевич Толстой";
+    private String fullName;
+
+    public Author (String Name) {
+        this.fullName = Name;
+    }
+
+    public String getFullName() {
+        return this.fullName;
+    }
+
 }
