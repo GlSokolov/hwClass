@@ -1,8 +1,10 @@
+import javax.naming.Name;
+
 public class Book {
-    private String bookName;
-    private String authorName;
+    private final String bookName;
+    private final Author authorName;
     private int publicationYear;
-    public Book (String book, String author, int publication) {
+    public Book (String book, Author author, int publication) {
         this.bookName = book;
         this.authorName = author;
         this.publicationYear = publication;
@@ -11,7 +13,7 @@ public class Book {
     public String getBookName() {
         return this.bookName;
     }
-    public String getAuthorName() {
+    public Author getAuthorName() {
         return this.authorName;
     }
     public int getPublicationYear() {

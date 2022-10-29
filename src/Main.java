@@ -6,23 +6,25 @@ public class Main {
     public static void main(String[] args) {
         space();
 
-        Book warAndPeace = new Book("Война и мир", "Лев Толстой", 1863);
+        Author levTolstoy = new Author("Лев", "Толстой");
+        Book warAndPeace = new Book("Война и мир", levTolstoy , 1863);
         System.out.println("Название книги - "+ warAndPeace.getBookName());
-        System.out.println("Имя автора - "+warAndPeace.getAuthorName());
+        System.out.println("Имя автора - "+levTolstoy.getName()+ " " +levTolstoy.getSurname());
         System.out.println("Дата публикации - "+warAndPeace.getPublicationYear()+ "г.");
+
         warAndPeace.setPublicationYear(1939);
-        System.out.println("Измененная дата публикации = " + warAndPeace.getPublicationYear());
-        Author warAndPeaceAuthor = new Author("Лев Толстой");
+        System.out.println("Измененная дата публикации - " + warAndPeace.getPublicationYear());
 
         space();
 
-        Book artOfWar = new Book("Исскуство войны", "Сунь Цзы", 2000);
+        Author sunTzu = new Author("Сунь", "Цзы");
+        Book artOfWar = new Book("Исскуство войны", sunTzu, 2000);
         System.out.println("Название книги - "+ artOfWar.getBookName());
-        System.out.println("Имя автора - "+artOfWar.getAuthorName());
+        System.out.println("Имя автора - "+sunTzu.getName()+ " " +sunTzu.getSurname());
         System.out.println("Дата публикации - "+artOfWar.getPublicationYear()+ "г.");
+
         artOfWar.setPublicationYear(2013);
-        System.out.println("Измененная дата публикации = " + artOfWar.getPublicationYear());
-        Author artOfWarAuthor = new Author("Сунь Цзы");
+        System.out.println("Измененная дата публикации - " + artOfWar.getPublicationYear());
 
         space();
     }
