@@ -27,5 +27,6 @@ public class Main {
         System.out.println("Измененная дата публикации - " + artOfWar.getPublicationYear());
 
         space();
+        // Test
     }
 }
