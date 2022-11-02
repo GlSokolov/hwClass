@@ -26,7 +26,19 @@ public class Main {
         artOfWar.setPublicationYear(2013);
         System.out.println("Измененная дата публикации - " + artOfWar.getPublicationYear());
 
+// __________________________________________________________________ Домашка методов обьекта:
+        Author tolkin = new Author("Джон", "Толкин");
+        Book lordOfRing = new Book("Властелин колец", tolkin, 1954);
+
+        Author tolkin2 = new Author("Джон", "Толкин");
+        Book beowolf = new Book("Беовульф", tolkin2, 2014);
+
         space();
-        // Test
+
+        System.out.println("Проверка вывода строк toString: "+sunTzu);
+        System.out.println("Сравнение авторов levTolstoy & sunTzu: "+levTolstoy.equals(sunTzu));
+        System.out.println("Сравнение авторов artOfWar & warAndPeace: "+artOfWar.equals(warAndPeace));
+        System.out.println("Сравнение авторов tolkin & tolkin2: " +tolkin2.equals(tolkin));
+        System.out.println("Сравнение его книг: " +beowolf.equals(lordOfRing));
     }
 }
